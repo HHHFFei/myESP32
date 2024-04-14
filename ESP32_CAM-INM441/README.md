@@ -1,5 +1,6 @@
 # ESP32-CAM & INM441
 https://www.bilibili.com/video/BV1xA411Q76y/
+https://www.youtube.com/watch?v=m8LwPNXqK9o
 ## 1. 开发板/模块  
 1. ESP32-CAM  
 2. INM441  
@@ -11,9 +12,9 @@ https://www.bilibili.com/video/BV1xA411Q76y/
 |GND|GND      |GND    |
 |TXD|U0R      |       |
 |RXD|U0T      |       |
-|   |IO16     |WS    |
-|   |IO13     |SCK    |
-|   |IO12     |SD    |
+|   |IO15     |WS     |
+|   |IO2      |SCK    |
+|   |IO13     |SD     |
 
 烧录程序时，ESP32-CAM的IO0与GND相接  
 
