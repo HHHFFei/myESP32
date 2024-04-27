@@ -1,67 +1,22 @@
 # myESP32
 这是我的ESP32实验基地。为了方便，同时也可能是由于对仓库的使用还不够了解，所有不同的项目都存放在这一个仓库下
 ## 1. 模块
-涉及到的开发板包括：  
+涉及到的模块包括：  
 1. ESP32-CAM  
-2. LCD（LCD液晶屏模块）  
-3. MPU6050（六轴陀螺仪模块）  
-4. MLX90640（热成像镜头模块）  
-5. INM441（全向麦克风模块）  
+2. ESP32-C3mini
+3. LCD（LCD液晶屏模块）  
+4. MPU6050（六轴陀螺仪模块）  
+5. MLX90640（热成像镜头模块）  
+6. INM441（全向麦克风模块）  
+7. WS2812B（LED灯珠）  
 
 ## 2. 项目
 涉及到或将会涉及到以下项目，同时可能包括以下各种项目的组合
-1. ESP32-SD  
-2. ESP32-STA   
-3. ESP32-AP  
-4. ESP32-BL  
-5. ESP32-LCD  
-6. ESP32-MPU6050  
-7. ESP32-MLX90640  
-8. ESP32-INM441  
-   
-### 2.1. ESP32-SD
-该项目主要用于探索通过ESP32将数据存入SD卡中。  
-#### 2.1.1. 接线  
-由于使用的ESP32开发板型号为ESP32-CAM，本身自带了SD卡槽，因此暂时并未考虑SD卡的接线。
-#### 2.1.2. 主要代码
-...由于之前没上传github，本地的代码不见了，以后再重新写吧  
-
-### 2.2. ESP32-STA
-该项目主要用于探索使用ESP32开发板，通过WIFI模块的STA模式，与电脑进行数据通信。  
-> 站点(STA，Station)在无线局域网(WLAN，WirelessLocalAreaNetworks)中一般为客户端，可以是装有无线网卡的计算机，也可以是有WiFi模块的智能手机，可以是移动的，也可以是固定的。在无线环境中STA接入的过程包括：认证STA有没有权限和接入点(AP，AccessPoint)建立链路；STA能不能接入WLAN；以及STA接入WLAN网络之后，认证STA能不能访问网络的权限。  
-#### 2.2.1. 接线
-由于ESP32-CAM开发板本身带有wifi模块，因此不需要额外接线即可使用ESP32-CAM的STA模式。  
-#### 2.2.2. 主要代码
-
-### 2.3. ESP32-AP
-
-### 2.4. ESP32-BL  
-
-### 2.5. ESP32-LCD  
-
-### 2.6. ESP32-MPU6050  
-该项目主要用于探索使用ESP32开发板，连接MPU6050模块，获取姿态和位置信息
-#### 2.6.1. 开发板和模块
-
-#### 2.6.2. 接口协议
-
-#### 2.6.3. 驱动库
-
-#### 2.6.4. 主要代码
-
-
-### 2.7. ESP32-MLX90640  
-
-### 2.8. ESP32-INM441  
-该项目主要用于探索使用ESP32开发版，连接INM441模块，采样环境中的音频信号
-#### 2.6.1. 开发板和模块
-1. ESP32-CAM  
-2. INM441  
-   INMP441是InvenSense公司推出的一款具有底部端口的高信噪比、低功耗、数字输出的全向MEMS麦克风，信噪比高达61dB，使其成为近场应用的绝佳选择。INMP441的电路结构如图所示，包括MEMS声音传感器、模数转换器（ADC）、抗混叠滤波器、电源管理模块以及行业标准的24位I2S接口。 I2S接口让INMP441可以直接连接到FPGA等数字处理器，而无需再外接音频编解码器。https://blog.csdn.net/zephyr_wang/article/details/128458073
-#### 2.6.2. 接口协议
-1. I2S接口标准
-   I2S（Inter-IC Sound）是一种广泛应用于数字音频传输的串行接口标准。它最初由飞利浦（Philips）公司开发，用于解决在集成电路之间传输音频数据的问题。I2S协议定义了音频数据的传输格式、时序和控制信号。在工作中音频采集和输出，AD和主芯片之间的通信均是通过I2S进行通信的。https://zhuanlan.zhihu.com/p/678943329  
-#### 2.6.3. 驱动库
-
-#### 2.6.4. 主要代码
-
+1. [ESP32C_CAM-SD](./ESP32_CAM-SD/README.md)
+2. [ESP32_CAM-STA](./ESP32_CAM-STA/README.MD)
+3. [ESP32_CAM-AP](./ESP32_CAM-AP/README.MD)
+4. [ESP32_CAM-BL](./ESP32_CAM-BL/README.MD)
+5. [ESP32_CAM-LCD](./ESP32_CAM-LCD/README.MD)
+6. [ESP32_CAM-MPU6050](./ESP32_CAM-MPU6050/README.MD) 
+7. [ESP32_CAM-MLX90640](./ESP32_CAM-MLX90640/README.MD)  
+8. [ESP32_CAM-INM441](./ESP32_CAM-INM441/README.MD)
