@@ -1,4 +1,5 @@
 # ESP32-CAM: MicroSD
+https://blog.csdn.net/m0_46622606/article/details/115497904
 ## 1. 开发板/模块  
 1. ESP32-CAM  
 
